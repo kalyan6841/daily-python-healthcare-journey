@@ -1,0 +1,15 @@
+# Day 02
+# Problem: Number of Steps to Reduce a Number to Zero
+# Focus: loops, conditionals, integer division
+# Goal: Python problem-solving foundation for AI/ML
+
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        steps = 0
+        while num > 0:
+            if num % 2 == 0:
+                num //= 2
+            else:
+                num -= 1
+            steps += 1
+        return steps
